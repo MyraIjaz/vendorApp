@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import {
   CButton,
   CCard,
@@ -15,19 +15,16 @@ import {
 } from '@coreui/react';
 import CIcon from '@coreui/icons-react';
 import { cilLockLocked, cilUser } from '@coreui/icons';
-import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
   const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Form submitted');
     // Perform login logic (API call, etc.)
     // On success:
     localStorage.setItem('authToken', 'your-auth-token'); // Save token
-    console.log('Redirecting to home page');
-    navigate('/'); // Redirect to home page
+    navigate('/home'); // Redirect to home page
   };
 
   return (

@@ -27,7 +27,6 @@ const Register = () => {
     console.log('Redirecting to login');
     navigate('/login'); // Redirect to login page
   };
-
   return (
     <div className="bg-light min-vh-100 d-flex flex-row align-items-center">
       <CContainer>
