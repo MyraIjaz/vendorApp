@@ -25,7 +25,7 @@ const Register = () => {
     // On success:
     localStorage.setItem('authToken', 'your-auth-token'); // Save token
     console.log('Redirecting to login');
-    navigate('/login'); // Redirect to login page
+    navigate('/'); // Redirect to login page
   };
   return (
     <div className="bg-light min-vh-100 d-flex flex-row align-items-center">
